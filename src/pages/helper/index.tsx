@@ -1,0 +1,1 @@
+export const SCORE = [ '2', '0', '0', '8' ]
