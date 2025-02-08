@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const Question = () => {
     let stageComplete = Number(localStorage.getItem("stageComplete"));
+
+    const nav = useNavigate();
   
     function setScore(str) {
         localStorage.setItem("score", str);
@@ -129,22 +131,26 @@ const Question = () => {
     function handleNext() {
 
         if (stageNumber && questionNumber) {
-            if (selectedIndex && data[stageNumber][questionNumber].options[selectedIndex - 1].isCorrect) {
-                setScore(score + 1);
-            }
+            
             if (Number(questionNumber) < data[stageNumber].length - 1) {
-                window.location.href = `/stage/${stageNumber}/questions/${Number(questionNumber) + 1}`
+                selectedIndex && data[stageNumber][questionNumber].options[selectedIndex - 1].isCorrect && setScore(score + 1);
+                setselectedIndex(null);
+                nav(`/stage/${stageNumber}/questions/${Number(questionNumber) + 1}`);
             } else {
+                const isTrue = selectedIndex && data[stageNumber][questionNumber].options[selectedIndex - 1].isCorrect;
+                let newScore = score + ( isTrue ? 1 : 0 );
+                
                 if (stageComplete < 4 && stageComplete >= 0) {
-                    setScore(( ( score * 100 ) / data[stageNumber].length));
+                    setScore(( ( newScore * 100 ) / data[stageNumber].length));
 
                 }
-                window.location.href = '/result';
+                setselectedIndex(null);
+                nav('/result');
             }
         }
     }
     return (
-        <div className='w-100 h-screen flex bg-cyan-300 flex-col py-4 px-1 justify-start gap-4 m-2' >
+        <div className='w-100 h-screen flex bg-[#8AAAE5] flex-col py-4 px-1 justify-start gap-4 m-2' >
             <div className="bg-white h-auto bg-white box-shadow py-6 px-2 text-2xl rounded-lg font-bold tracking-tight text-gray-900 shadow-lg">
                 {stageNumber && Number(stageNumber) < data.length && data[stageNumber][questionNumber].questionText}
             </div>
