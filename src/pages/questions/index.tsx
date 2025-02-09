@@ -153,9 +153,6 @@ const Question = () => {
 
                 }
                 setselectedIndex(null);
-                if(Number(stageNumber) == 3)
-                    nav('/');
-                else
                     nav('/result');
             }
         }

@@ -1,1 +1,1 @@
-export const SCORE = [ '2', '0', '0', '8' ]
+export const SCORE = [ '1', '8', '0', '8' ]
