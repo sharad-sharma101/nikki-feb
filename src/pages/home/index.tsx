@@ -69,7 +69,8 @@ const Home = () => {
     return (
         <div className='w-screen h-min flex flex-col gap-8 bg-[#8AAAE5] p-2 gap-4' >
             <div className="h-auto flex rounded-lg">
-                <img className='w-auto rounded-lg' src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9ua2V5fGVufDB8fDB8fHww" alt="" />
+                <video className='w-auto rounded-lg' src='https://firebasestorage.googleapis.com/v0/b/assingment-2621d.firebasestorage.app/o/20240909_204737.mp4?alt=media&token=ba0b9cf4-d3d5-4da7-ade3-344ac828c777' autoPlay muted={false} loop/>
+                {/* <img className='w-auto rounded-lg' src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9ua2V5fGVufDB8fDB8fHww" alt="" /> */}
             </div>
             <div className="h-auto flex flex-col gap-4 rounded-lg shadow-lg bg-gray-200 px-2 py-4">
                 <div className='text-2xl font-bold' >

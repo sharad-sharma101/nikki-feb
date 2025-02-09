@@ -15,115 +15,123 @@ const Question = () => {
     const data = [
         [
             {
-                questionText: 'What is the capital of France?',
+                questionText: 'What thing I must need in following?',
                 options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
+                    { optionText: 'Chasma', isCorrect: false },
+                    { optionText: 'earphone', isCorrect: true },
+                    { optionText: 'leptop', isCorrect: false },
+                    { optionText: 'chew gum', isCorrect: false }
                 ]
             },
             {
-                questionText: 'What is the capital of France?',
+                questionText: 'If I can go to only one place in following, where I will go?',
                 options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
+                    { optionText: 'Brazil', isCorrect: false },
+                    { optionText: 'Russia', isCorrect: false },
+                    { optionText: 'Japan', isCorrect: true },
+                    { optionText: 'Korea', isCorrect: false }
                 ]
             },
             {
-                questionText: 'What is the capital of France?',
+                questionText: 'What is my favourite color?',
                 options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
+                    { optionText: 'Black', isCorrect: false },
+                    { optionText: 'Blue', isCorrect: false },
+                    { optionText: 'Red', isCorrect: false },
+                    { optionText: 'White', isCorrect: true }
                 ]
             },
             {
-                questionText: 'What is the capital of France?',
+                questionText: 'Pick one movie according to me?',
                 options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
-                ]
-            },
-        ],
-        [
-            {
-                questionText: 'What is the capital of France?',
-                options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
-                ]
-            },
-            {
-                questionText: 'What is the capital of France?',
-                options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
-                ]
-            },
-            {
-                questionText: 'What is the capital of France?',
-                options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
-                ]
-            },
-            {
-                questionText: 'What is the capital of France?',
-                options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
+                    { optionText: 'A Wednesday', isCorrect: false },
+                    { optionText: 'Gulaal', isCorrect: false },
+                    { optionText: 'Tamasha', isCorrect: true },
+                    { optionText: 'De dana dan', isCorrect: false }
                 ]
             },
         ],
         [
             {
-                questionText: 'What is the capital of France?',
+                questionText: 'If you have following option to go with me, where you want to go first?',
                 options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
+                    { optionText: 'Mountain', isCorrect: false },
+                    { optionText: 'Forest', isCorrect: false },
+                    { optionText: 'Beach', isCorrect: false },
+                    { optionText: 'Road Trip', isCorrect: true }
                 ]
             },
             {
-                questionText: 'What is the capital of France?',
+                questionText: 'If you can pick only one makeup item for your whole life what will you choose?',
                 options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
+                    { optionText: 'Foundation', isCorrect: false },
+                    { optionText: 'Eye liner', isCorrect: false },
+                    { optionText: 'Lipstick', isCorrect: true },
+                    { optionText: '​Blush', isCorrect: false }
                 ]
             },
             {
-                questionText: 'What is the capital of France?',
+                questionText: 'Choose one paratha?',
                 options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
+                    { optionText: 'Aloo Paratha', isCorrect: false },
+                    { optionText: 'Meethi Paratha', isCorrect: false },
+                    { optionText: 'Palak Paratha', isCorrect: true },
+                    { optionText: 'Onion paratha', isCorrect: false }
                 ]
             },
             {
-                questionText: 'What is the capital of France?',
+                questionText: 'Most fav song amoung below?',
                 options: [
-                    { optionText: 'New York', isCorrect: false },
-                    { optionText: 'London', isCorrect: false },
-                    { optionText: 'Paris', isCorrect: true },
-                    { optionText: 'Dublin', isCorrect: false }
+                    { optionText: 'Dooriyan', isCorrect: true },
+                    { optionText: 'Cold/mess', isCorrect: false },
+                    { optionText: 'Accha lagta hai', isCorrect: false },
+                    { optionText: 'Mulaqat', isCorrect: false }
+                ]
+            },
+        ],
+        [
+            {
+                questionText: 'If we had unlimited resources, what philanthropic activities or causes would you want us to support??',
+                options: [
+                    { optionText: 'Orphan children', isCorrect: false },
+                    { optionText: 'Acid victom girls', isCorrect: false },
+                    { optionText: 'Disable animal', isCorrect: true },
+                    { optionText: 'Hungary people', isCorrect: false }
+                ]
+            },
+            {
+                questionText: 'What are best way to reate a romantic atmosphere in our home?',
+                options: [
+                    { optionText: 'Romantic music', isCorrect: false },
+                    { optionText: 'Lighting', isCorrect: true },
+                    { optionText: 'Flower', isCorrect: false },
+                    { optionText: 'Fragnence', isCorrect: true }
+                ]
+            },
+            {
+                questionText: 'If I am animal, what animal I am?',
+                options: [
+                    { optionText: 'Dog', isCorrect: false },
+                    { optionText: 'Elephant', isCorrect: false },
+                    { optionText: 'Tortoise', isCorrect: true },
+                    { optionText: 'Fox', isCorrect: false }
+                ]
+            },
+            {
+                questionText: 'If I disappear tommarow from this world, where I am? ( every answer is corerct )',
+                options: [
+                    { optionText: 'He will go legendary jurney whitout notify anyone', isCorrect: true },
+                    { optionText: 'In my room, just switch off phone and other social media', isCorrect: true },
+                    { optionText: 'Someone kidnap me and I join there gang later', isCorrect: true },
+                    { optionText: 'Actualy I perform some mystrious ritual', isCorrect: true }
+                ]
+            },
+        ],
+        [
+            {
+                questionText: 'Nikki love you so much ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️?',
+                options: [
+                    { optionText: 'Me too', isCorrect: true },
                 ]
             },
         ]
@@ -145,7 +153,10 @@ const Question = () => {
 
                 }
                 setselectedIndex(null);
-                nav('/result');
+                if(Number(stageNumber) == 3)
+                    nav('/');
+                else
+                    nav('/result');
             }
         }
     }
